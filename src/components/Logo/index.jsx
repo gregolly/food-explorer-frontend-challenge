@@ -1,10 +1,10 @@
-import { Polygon } from '../../components/Polygon'
+import { PolygonIcon } from '../PolygonIcon'
 import { Container } from './styles'
 
 export const Logo = () => {
     return (
         <Container>
-                <Polygon />
+                <PolygonIcon />
                 <h1>Food Explorer</h1>
         </Container>
     )
