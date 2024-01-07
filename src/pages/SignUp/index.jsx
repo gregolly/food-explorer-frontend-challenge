@@ -1,15 +1,13 @@
+import { Link } from "react-router-dom"
 import { Button } from "../../components/Button"
 import { Input } from "../../components/Input"
-import { Polygon } from "../../components/Polygon"
 import { Container, Form } from "./styles"
+import { Logo } from "../../components/Logo"
 
 export const SignUp = () => {
     return (
         <Container>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px'}}>
-                <Polygon />
-                <h1 style={{ fontSize: '42px', fontWeight: '700'}}>Food Explorer</h1>
-            </div>
+            <Logo />
             <Form>
                 <h2 style={{ 
                     fontFamily: 'poppins', 
@@ -28,7 +26,7 @@ export const SignUp = () => {
                 <Button>
                     Entrar
                 </Button>
-                <a href=''>Criar uma conta</a>
+                <Link to="/register">Criar uma conta</Link>
             </Form>
         </Container>
     )
