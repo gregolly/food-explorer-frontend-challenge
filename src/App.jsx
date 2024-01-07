@@ -1,7 +1,7 @@
-import { SignIn } from "./pages/SignIn"
+import { Routes } from './routes'
 
 export const App = () => {
   return (
-    <SignIn />
+    <Routes />
   )
 }
