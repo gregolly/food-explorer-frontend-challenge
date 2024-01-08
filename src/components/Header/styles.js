@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-    display: flex;
-    padding: 24px 123px;
     background-color: ${({ theme }) => theme.DARK[600]};
-    gap: 32px;
-    align-items: center;
-    justify-content: center;
+
+    .container {
+        display: flex;
+        padding: 24px 0;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        width: 1200px;
+        margin: 0 auto;
+    }
 `
 
 export const SearchContainer = styled.div`

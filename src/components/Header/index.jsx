@@ -21,29 +21,31 @@ export const Header = () => {
 
     return (
         <Container>
-            <Logo />
-            <SearchContainer>
-                {!hasValueOnSearchInput ? (
-                    <div>
-                    <SearchIcon width={25} height={24} />
-                    <label htmlFor='search'>Busque por pratos ou ingredientes</label>
-                </div>
+            <div className='container'>
+                <Logo />
+                <SearchContainer>
+                    {!hasValueOnSearchInput ? (
+                        <div>
+                        <SearchIcon width={25} height={24} />
+                        <label htmlFor='search'>Busque por pratos ou ingredientes</label>
+                    </div>
+                    ) : (
+                        ""
+                    )}
+                    <input type="text" id='search' onChange={onChangeInputSearch} />
+                </SearchContainer>
+                {isUserAdmin ? (
+                    <Button>
+                        Novo prato
+                    </Button>
                 ) : (
-                    ""
+                    <Button>
+                        <ReceiptIcon width={33} height={32} />
+                        Pedidos (0)
+                    </Button>
                 )}
-                <input type="text" id='search' onChange={onChangeInputSearch} />
-            </SearchContainer>
-            {isUserAdmin ? (
-                <Button>
-                    Novo prato
-                </Button>
-            ) : (
-                <Button>
-                    <ReceiptIcon width={33} height={32} />
-                    Pedidos (0)
-                </Button>
-            )}
-            <SignOutIcon width={32} height={32} />
+                <SignOutIcon width={32} height={32} />
+            </div>
         </Container>
     )
 }
