@@ -10,9 +10,9 @@ import { CardWrapper, Wrapper } from "./styles"
 export const Card = () => {
     return (
         <CardWrapper>
-            <div className='wrapperFavorite'>
+            <button className='wrapperFavorite'>
                 <Favorite />
-            </div>
+            </button>
             <img src={dish} alt="" />
             <h3>Spaguetti Gambe</h3>
             <p>Massa fresca com camarões e pesto. </p>

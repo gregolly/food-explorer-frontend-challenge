@@ -16,6 +16,7 @@ export const CardWrapper = styled.div`
         position: absolute;
         top: 15px;
         right: 15px;
+        background: none;
     }
 
     h3 {
