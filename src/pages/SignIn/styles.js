@@ -9,7 +9,7 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-    background-color: #001119;
+    background-color: ${({ theme }) => theme.DARK[700]};
     border-radius: 1rem;
     padding: 4rem;
     display: flex;

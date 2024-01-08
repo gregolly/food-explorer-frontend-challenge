@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     border-radius: 8px;
-    background: var(--Gradients-200, linear-gradient(180deg, #091E26 0%, #00131C 100%));
+    background: ${({ theme }) => theme.GRADIENTS[200]};
     width: 1120px;
     height: 260px;
     flex-shrink: 0;

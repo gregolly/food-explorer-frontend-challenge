@@ -40,8 +40,8 @@ export default createGlobalStyle`
   body {
     min-height: 100vh;
 
-    background-color: ${({ theme }) => theme.darkTheme.DARK[400]};
-    color: ${({ theme }) => theme.darkTheme.LIGHT[300]};
+    background-color: ${({ theme }) => theme.DARK[400]};
+    color: ${({ theme }) => theme.LIGHT[300]};
   }
 
   a {
@@ -79,6 +79,6 @@ export default createGlobalStyle`
   }
   ::-webkit-scrollbar-thumb {
     border-radius: .8rem;
-    background-color: ${({ theme }) => theme.darkTheme.TINTS.CAKE[100]};
+    background-color: ${({ theme }) => theme.TINTS.CAKE[100]};
   }
 `

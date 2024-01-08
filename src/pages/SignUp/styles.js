@@ -4,12 +4,12 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: #fff;
+    color: ${({ theme }) => theme.LIGHT[100]};
     height: 100vh;
 `
 
 export const Form = styled.form`
-    background-color: #001119;
+    background-color: ${({ theme }) => theme.DARK[700]};
     border-radius: 1rem;
     padding: 4rem;
     display: flex;
@@ -19,7 +19,7 @@ export const Form = styled.form`
     a {
         font-family: Poppins;
         font-size: 14px;
-        color: #fff;
+        color: ${({ theme }) => theme.LIGHT[100]};
         font-weight: 500;
         text-align: center;
         text-decoration: none;

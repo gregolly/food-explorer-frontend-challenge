@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.header`
     display: flex;
     padding: 24px 123px;
-    background-color: #00111A;
+    background-color: ${({ theme }) => theme.DARK[600]};
     gap: 32px;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ export const SearchContainer = styled.div`
 
     > div {
         position: absolute;
-        color: #7C7C8A;
+        color: ${({ theme }) => theme.LIGHT[500]};
         display: flex;
         align-items: center;
         gap: 14px;
@@ -25,7 +25,7 @@ export const SearchContainer = styled.div`
     input {
         padding: 18px 14px;
         border-radius: 5px;
-        background-color: #0D1D25;
+        background-color: ${({ theme }) => theme.DARK[900]};
         border: none;
         width: 500px;
         color: #fff;
