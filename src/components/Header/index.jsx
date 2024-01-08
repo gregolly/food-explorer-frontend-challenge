@@ -2,10 +2,10 @@ import { useCallback, useState } from 'react'
 
 import { Button } from '../Button'
 
-import { Logo } from '../Logo'
-import { SearchIcon } from '../SearchIcon'
-import { ReceiptIcon } from '../ReceiptIcon'
-import { SignOutIcon } from '../SignOutIcon'
+import { Logo } from './components/Logo'
+import { SearchIcon } from './components/SearchIcon'
+import { ReceiptIcon } from './components/ReceiptIcon'
+import { SignOutIcon } from './components/SignOutIcon'
 
 import { Container, SearchContainer } from "./styles"
 

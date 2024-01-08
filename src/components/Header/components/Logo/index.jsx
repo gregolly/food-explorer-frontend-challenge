@@ -1,4 +1,4 @@
-import { PolygonIcon } from '../PolygonIcon'
+import { PolygonIcon } from './components/PolygonIcon'
 import { Container } from './styles'
 
 export const Logo = () => {
