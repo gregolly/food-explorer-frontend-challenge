@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: #fff;
+    color: ${({ theme }) => theme.LIGHT[100]};
     height: 100vh;
 `
 
@@ -19,7 +19,7 @@ export const Form = styled.form`
     a {
         font-family: Poppins;
         font-size: 14px;
-        color: #fff;
+        color: ${({ theme }) => theme.LIGHT[100]};
         font-weight: 500;
         text-align: center;
         text-decoration: none;
@@ -27,5 +27,22 @@ export const Form = styled.form`
         &:hover {
             opacity: 0.8;
         }
+    }
+
+    input {
+        display: flex;
+        width: 348px;
+        height: 48px;
+        padding: 12px 14px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid ${({ theme }) => theme.LIGHT[100]};
+        background: none;
+    }
+
+    label {
+        margin-bottom: 8px;
+        color: ${({ theme }) => theme.LIGHT[400]};
     }
 `
