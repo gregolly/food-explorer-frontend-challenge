@@ -19,6 +19,13 @@ export const CardWrapper = styled.div`
         background: none;
     }
 
+    > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
     h3 {
         color: ${({ theme }) => theme.LIGHT[300]};
         font-family: Poppins;
